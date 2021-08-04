@@ -1,0 +1,58 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    display: flex;
+   
+}
+
+.lado_izq{
+    width: 50vw;
+    background-color:lightblue;
+    height: 100vh;
+
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo{
+    font-size: 80px;
+    text-align: center;
+}
+
+.sub{
+    font-size: 40px;
+    text-align: center;
+}
+
+.nombre{
+    font-size: 30px;
+    text-align: center;
+}
+
+.lado_der{
+    width: 50vw;
+    height: 100vh;
+}
+
+.contenedor{
+margin-top: 30vh;
+}
+
+details{
+    font-size: 50px;
+}
+
+a{
+    margin-left: 20px;
+}
+
+ol{
+ list-style-type: none;   
+}
