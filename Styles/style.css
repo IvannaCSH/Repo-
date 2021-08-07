@@ -17,8 +17,10 @@
 }
 
 .header{
+    height: 100vh;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
 }
 
 .titulo{
@@ -56,3 +58,37 @@ a{
 ol{
  list-style-type: none;   
 }
+
+
+/* < = 767px*/
+@media screen and (max-width : 767px){
+    .lado_der{
+        background-color: sandybrown;
+    }
+    .lado_izq{
+        background-color: palevioletred;
+    }
+}
+
+/* < = 768px y > = 1024*/
+@media screen and (min-width : 768px) and (max-width : 1024px) {
+   .lado_izq{
+       background-color: mediumaquamarine;
+   } 
+   .lado_der{
+       background-color: skyblue;
+   }
+}
+
+
+
+@media screen and (min-width : 1025px) {
+
+.lado_izq{
+    background-color: powderblue;
+}
+
+.lado_der{
+    background-color: white;
+}
+  }
