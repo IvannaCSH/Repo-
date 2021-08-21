@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays JS</title>
+</head>
+<body>
+    <h1>Array JS</h1>
+
+    <script>
+        //Declaramos un array
+        // Posición:        0              1            2
+        let cajonera = ['playeras' , 'pantalones' , 'calcetas']; //tamaño 3
+
+        //obtener valor específico
+        //console.log(cajonera[0]);  
+
+        // Modificar un valor del arreglo
+        cajonera[2]='zapatos';
+        // console.log(cajonera[2]);
+
+        // Tamaño de mi arreglo
+        //console.log("El tamaño del arreglo es de : " + cajonera.length);
+
+        //Agregar un elemento al arreglo
+        cajonera.push("boxers");
+        console.log(cajonera);
+
+        //Eliminar elementos del arreglo
+        //pop() elimina el último elemento
+        //shift() elimina el primer elemento
+        cajonera.pop();
+        cajonera.shift();
+        console.log(cajonera);
+        
+      /*/ let colores = ["rojo", "verde", "azul", "amarillo","naranja","morado"];
+       colores.push("rosa");
+       colores[1] = "blanco";
+       colores.shift();
+       colores[0] = "negro";
+       colores.push("gris");
+       console.log(colores);
+       
+
+      // Bucle for
+      console.log("Aquí empieza el bucle");
+      let estado = 0;
+      // estado_inicial; condición; siguiente_estado
+      for (estado; estado < 3 ; estado ++) {
+          console.log("Hola chicos");
+      }
+      console.log("Fin del bucle");
+     
+    let colores = ["rojo", "verde", "azul"];
+    let cantidad = colores.length;
+    for (posicion = 0; posicion < cantidad; posicion++) {
+        console.log("Posición: " + posicion);
+        console.log("Color: " + colores[posicion]);
+        
+    }
+    */
+
+    console.log(cajonera);
+    let estado = 0;
+    let tamano = cajonera.length; //2
+    for (estado; estado < tamaño; estado++) {
+    console.log(cajonera[estado]);
+        
+    }
+
+
+    </script>
+</body>
+</html>
