@@ -1,0 +1,44 @@
+body{
+  background-color: #f6f5e9;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 18px;
+  color: #00202e;
+ }
+ h1{
+    font-size: 35px;
+    text-align: center;
+    color: #fdd03b;
+    font-family: 'Fredoka One', cursive;
+}
+nav{
+    background-color: #4a9396; 
+    height: 30px;
+    text-align: center;
+    padding: 5px;
+} 
+
+nav > a{
+    margin: 20px;
+    color: white;
+}
+h2{
+    color: #fdd03b;
+    font-family: 'Fredoka One', cursive;
+    }
+p{
+    text-align: justify;
+}
+
+#imgprincipal{
+    height: 350px;
+    display: block;
+    margin: auto;
+}
+li{
+    list-style-type:square;
+}
+.imgs{
+    height: 250px;
+    display: block;
+    margin: auto;
+}
