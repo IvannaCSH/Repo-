@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions JS</title>
+</head>
+<body>
+    <h1>Functions JS</h1>
+    <button onclick="showAlert()">Click me</button>
+    <button value="blue" onclick="changeColor(value)">Blue</button>
+    <button value="red" onclick="changeColor(value)">Red</button>
+    <button value="#03fc62" onclick="changeColor(value)">Green</button>
+
+    <script>
+
+        const changeColor =(color) =>{
+        document.body.style.backgroundColor = color;
+        }
+
+
+        //Declarar nuestra funciones
+        function saludar() {
+            //código
+            console.log("Hola");
+        }
+
+        //Funciones que retornan algo
+        const saludar2 = () =>{
+        return "hola";
+        }
+        console.log(saludar2());
+
+        const suma =(num1, num2) =>{
+        return num1 + num2
+        }
+        console.log(suma(10, 5));
+
+        //Funciones de flecha / arrow functions
+        const despedida = () =>{
+            console.log("adios");
+        }
+
+        const showAlert = () =>{
+            alert("Me clickeaste");
+        }
+        // Función con parametro
+        const cocinar = (comida) =>{
+            console.log("Hoy estoy cocinando " + comida);
+        } 
+
+        //     Crear            Parametros
+        const saludarAmigo = (saludo, amigo) =>{
+        console.log(saludo,amigo);
+        }
+
+        //Parámetros con valor por defecto
+        const despedidaAmigo = (despedida="Hasta luego", amigo="Chabelo") =>{
+            console.log(despedida, amigo);
+        }
+
+
+        //Lamar a la función
+        //   Llamar         Argumentos
+        /*cocinar("pizza");
+        cocinar("hamburguesas");
+        saludar();
+        despedida(); 
+        saludarAmigo("Buenos días", "Percy");
+        despedidaAmigo();*/
+
+        //Ejercicio
+        const ejercicio = (nombre, edad, estado) =>{
+            return `Hola mi nombre es ${nombre}, tengo ${edad} años y soy de ${estado}`;
+        }
+        console.log(ejercicio("Ivanna", 14, "Campeche"));
+
+    </script>
+</body>
+</html>
