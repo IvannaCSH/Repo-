@@ -7,6 +7,9 @@
 h1{
     text-align: center;
 }
+.body{
+    background-color:lightseagreen;
+}
 .circle{
     background-color:plum;
     width: 100px;
