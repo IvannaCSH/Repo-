@@ -1,19 +1,16 @@
-const url = ".";
+const url = "https://raw.githubusercontent.com/IvannaCSH/Repo-Fundamentos-de-programacion-web/main/Js/datos.json";
 
 fetch(url).then( (response)=> {
     return response.json();
 }).then( (data)=> {
-    nombre = document.getElementById("nombre");
-    nombre.innerHTML = data.name
-    
-    img = document.getElementById('imagen');
-    img.src = data.sprites.front_default
+    energía = document.getElementById("energía");
+    energía.innerHTML = data.energía
 
-    type = document.getElementById('porcentaje_mexico');
-    type.innerHTML = data.types[0].type.name
+    porcentaje_mexico = document.getElementById('porcentaje_mexico');
+    porcentaje_mexico.innerHTML = data.porcentaje_mexico
 
-    peso = document.getElementById('porcentaje_mundo');
-    peso.innerHTML = data.weight;
+    porcentaje_mundo = document.getElementById('porcentaje_mundo');
+    porcentaje_mundo.innerHTML = data.porcentaje_mundo;
 
 }).catch(function (error) {
     alert("Sucedió un error")

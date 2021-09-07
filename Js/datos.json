@@ -1,27 +1,7 @@
 [
-    {
-        "energía": "Energía Solar",
-        "porcentaje_mexico": "4.3",
-        "porcentaje_mundo": "2.7"
-      },
-      {
-        "energía": "Energía Eólica",
-        "porcentaje_mexico": " 7.5",
-        "porcentaje_mundo": "3"
-      },
-      {
-        "energía": "Energía Hidráulica",
-        "porcentaje_mexico": "10",
-        "porcentaje_mundo": "16.66"
-      },
-      {
-        "energía": "Energía Geotérmica",
-        "porcentaje_mexico": "1.2",
-        "porcentaje_mundo": "1"
-      },
-      {
-        "energía": "Biomasa",
-        "porcentaje_mexico": "4.22",
-        "porcentaje_mundo": "0.9"
-      }
+  {
+      "energía": "Energía Hidráulica",
+      "porcentaje_mexico": "31",
+      "porcentaje_mundo": "19.3"
+    }
 ]
