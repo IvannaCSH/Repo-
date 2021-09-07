@@ -3,6 +3,38 @@
     margin: 0;
     box-sizing: border-box;
 }
+body{
+    font-family: 'Varela Round', sans-serif;
+}
+
+#ul {
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    background: #4D5155;
+    padding: 2px;
+  }
+
+.nav > ul > li >a {
+    display: block;
+    color: #f4f4f4;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    float: left;
+  }
+  
+  .nav > ul > li > a:hover {
+    background-color: #373737;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  #logo{
+    height: 40px;
+    float: left;
+    margin: 2px 10px;
+  }
+
 
 .main{
     display: flex;
@@ -11,20 +43,23 @@
 
 .lado_izq{
     width: 50vw;
-    background-color:lightblue;
+    background: skyblue;
     height: 100vh;
+    font-family: 'Kaisei Decol', serif;
 
 }
 
-.header{
+.div{
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    color: white;
+    
 }
 
 .titulo{
-    font-size: 80px;
+    font-size: 70px;
     text-align: center;
 }
 
@@ -38,13 +73,19 @@
     text-align: center;
 }
 
+.gif{
+    width: 55%;
+    display: block;
+  margin: auto;
+}
+
 .lado_der{
     width: 50vw;
     height: 100vh;
 }
 
 .contenedor{
-margin-top: 30vh;
+margin-top: 10vh;
 }
 
 details{
@@ -85,7 +126,8 @@ ol{
 @media screen and (min-width : 1025px) {
 
 .lado_izq{
-    background-color: powderblue;
+    background: rgb(93,118,244);
+background: radial-gradient(circle, rgba(93,118,244,1) 0%, rgb(247, 191, 228) 100%);
 }
 
 .lado_der{

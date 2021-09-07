@@ -6,44 +6,103 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Varela+Round&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Kaisei+Decol&family=Varela+Round&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../Styles/index_style.css">
+    <link rel="shortcut icon" href="../src/logo_energia.png">
     <title> Energías renovables</title>
 </head>
 <body> 
-  
-  <nav>
-    <ol>
-    <li><a href="../portafolio.html" class="portafolio">Portafolio</a> </li>
-    <li><a href="#Que_son">¿Qué son?</a></li>
-    <li><a href="#Caracteristicas">Características</a></li>
-    <li><a href="#Ejemplos"> Ejemplos</a></li>
-  </ol>
-</nav>
 
-    <header>
+    <header class="header">
+      <nav class="nav">
+        <ol  id="ol">
+        <li class="items-nav"><img id="logo" src="../src/logo_energia.png" alt="logo"></li>  
+        <li class="items-nav"><a href="../Pages/inicio.html" >Inicio</a> </li>
+        <li class="items-nav"><a href="../portafolio.html">Portafolio</a></li>
+        <li class="items-nav"><a href="../Pages/index.html">Proyecto final</a></li>
+      </ol>
+    </nav>
+
         <h1 > Energías renovables</h1>
+    
     </header>
-       
+    
+       <main> 
+        
+        <h2>Índice: </h2> 
+        <ol> 
+          <li class="items-menu"><a href="#Que_son">¿Qué son?</a></li>
+          <li class="items-menu"><a href="#Caracteristicas">Características</a></li>
+          <li class="items-menu"><a href="#Ejemplos"> Ejemplos</a></li>
+          <li class="items-menu"><a href="#Datos"> Datos</a></li>
+        </ol> 
+        
+       </main>
      
-      <main>
-           <h2 id="Que_son" > ¿Qué son?</h2>
+      <div class="div1">
+           <h3 id="Que_son" > ¿Qué son?</h3>
           <p>Las energías renovables son fuentes de energía limpias, inagotables y crecientemente competitivas. Están basadas en la utilización de recursos naturales: el sol, el viento, el agua o la biomasa vegetal o animal. Se caracterizan por no utilizar combustibles fósiles, sino recursos naturales capaces de renovarse ilimitadamente. En la actualidad las energías renovables son una realidad presente en nuestra sociedad y sus beneficios para el medio ambiente son más que evidentes.</p>
-          <img src="../src/energias.jpg" alt="energías" id="imgprincipal">   
-      </main>
+          <div class="content-all">
+            <div class="content-carrousel">
+                <figure><img src="../src/fuentes_ilimitadas.jpg" alt="fuentes ilimitadas"></figure>
+                <figure><img src="../src/solar.jpg" alt="energía solar"></figure>
+                <figure><img src="../src/energía hidraulica.png" alt="energía hidráulica"></figure>
+                <figure><img src="../src/Energia_renovable.jpg" alt="energía renovable"></figure>
+                <figure><img src="../src/energia_geotermica.jpg" alt="energía geotérmica"></figure>
+                <figure><img src="../src/Mareomotriz.jpeg" alt="energía mareomotriz"></figure>
+                <figure><img src="../src/energias-renovables.jpg" alt="energías renovables"></figure>
+                <figure><img src="../src/biomasa.jpg" alt="biomasa"></figure>
+                <figure><img src="../src/colector_solar.jpg" alt="colector solar"></figure>
+            </div>
+      </div>
+   </div>
+        
+        <div>
+          <h3 id="Caracteristicas"> Características</h3>
+       
+        <div class="container">
+  
+          <ul class="slider">
+            <li id="slide1">
+              <p>Su aprovechamiento provoca una afección muy baja al medioambiente. No se generan muchos residuos.</p>
+              <img src="../src/fotof.jpg" alt="Medioambiente">
+            </li>
+
+            <li id="slide2">
+              <p>Son fuentes de energía ilimitadas, por ello también se las conoce como fuentes de energía inagotables, ya que no se agotan con su consumo.</p>
+              <img src="../src/energias.jpg" alt="energías">
+            </li>
+
+            <li id="slide3">
+              <p>Son fuentes de energía autóctonas.</p>
+              <img src="../src/energías_autoctonas.jpg" alt="Energías autóctonas">
+
+            </li>
+          </ul>
+          
+      </div>
           <div>
-            <h2 id="Caracteristicas"> Características</h2>
-              <ul>
-                  <li>Su aprovechamiento provoca una afección muy baja al medioambiente. No se generan residuos.</li>
-                  <li>Son fuentes de energía ilimitadas, por ello también se las conoce como fuentes de energía inagotables, ya que no se agotan con su consumo.</li>
-                  <li>Son fuentes de energía autóctonas.</li>
-              </ul>
-          </div>
+          <ul class="menu">
+            <li>
+              <a href="#slide1">1</a>
+            </li>
+            <li>
+              <a href="#slide2">2</a>
+            </li>
+             <li>
+              <a href="#slide3">3</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+  
       <div >
-        <h2 id="Ejemplos" >Ejemplos</h2>
+        <h3 id="Ejemplos" >Ejemplos</h3>
         <details>
             <summary>Energía Solar</summary>
-            <p> La energía solar es una energía renovable obtenida a partir de la radiación electromagnética del Sol. Se trata de una energía renovable porque se obtiene de una fuente natural e inagotable, en este caso el Sol.</p>
+            <p> La energía solar es una energía renovable obtenida a partir de la radiación electromagnética del Sol. Se trata de una energía renovable porque se obtiene de una fuente natural e inagotable, en este caso el Sol. También existe la energía solar termoeléctrica, que es aquella que utiliza la radiación solar para calentar un fluido, hasta que genere vapor, y accione una turbina que genera electricidad. </p>
+            <p>La energía solar se puede captar a través de células fotoeléctricas (que conforman los paneles fotovoltaicos que todos conocemos), heliostatos o colectores solares, que posteriormente la transforman en energía solar térmica (a través de la temperatura) o energía solar fotovoltaica (a través de la luz). También puede aprovecharse de forma pasiva con técnicas de arquitectura bioclimática y sostenible, como veremos a continuación.</p>
             <img src="../src/sol.jpg " alt="solar"  class="imgs"> 
         
         </details>
@@ -51,27 +110,54 @@
           <details>
             <summary>Energía Eólica</summary>
             <p>La energía eólica es una fuente de energía renovable que se obtiene de la energía cinética del viento que mueve las palas de un aerogenerador el cual a su vez pone en funcionamiento una turbina que la convierte en energía eléctrica.
+              Un aerogenerador es un generador eléctrico movido por una turbina accionada por el viento, sus predecesores son los molinos de viento.
             </p>
             <img src="../src/eolica.png " alt="eolica" class="imgs">
     </details>
 
           <details>
             <summary>Energía Hidráulica</summary>
-            <p>Energía hidráulica, energía hídrica o hidroenergía es aquella que se obtiene del aprovechamiento de las energías cinéticas y potenciales de la corriente del agua, saltos de agua o mareas. Se puede transformar a diferentes escalas.</p>
+            <p>La energía hidráulica, también conocida como energía hidroeléctrica, es aquella energía alternativa que se obtiene del aprovechamiento de las energías cinéticas y potenciales de la corriente del agua, saltos de agua o mareas, ya sea mediante molinos o presas.</p>
+            <p>Esta electricidad se obtiene en las centrales hidroeléctricas, las cuales embalsan agua de los ríos en presas y esta es liberada de forma controlada, haciendo que mueva una turbina y generando electricidad. Algunas presas funcionan sobre todo el caudal del río mientras que otras desvían parte de su corriente.</p>
             <img src="../src/hidraulica.jpg " alt="hidraulica" class="imgs" >
          </details>
 
           <details>
             <summary> Energía Geotérmica</summary>
-            <p>La energía geotérmica es una fuente de energía renovable que aprovecha el calor que existe en el subsuelo de nuestro planeta. Sus principales aplicaciones se dan en nuestra vida cotidiana: climatizar y obtener agua caliente sanitaria de manera ecológica tanto en grandes edificios como en viviendas.
+            <p>La energía geotérmica es una energía renovable que aprovecha el calor del subsuelo para climatizar y obtener agua caliente sanitaria de forma ecológica. Aunque es una de las fuentes de energía renovable menos conocidas, sus efectos son espectaculares de admirar en la naturaleza.
               </p> 
+              <p>El calor contenido en el subsuelo es empleado mediante el uso de Bombas de Calor Geotérmicas para caldear en invierno, refrigerar en verano y suministrar agua caliente sanitaria. Por tanto, cede o extrae calor de la tierra, según queramos obtener refrigeración o calefacción, a través de un conjunto de colectores (paneles) enterrados en el subsuelo por los que circula una solución de agua con glicol.</p>
                <img src="../src/geotermica.jpg " alt="geotérmica" class="imgs">
         
             </details>
 
-
+            <details>
+              <summary> Biomasa </summary>
+                <p>La energía biomasa consiste en la combustión de residuos orgánicos de origen animal y vegetal. Con producto biodegradable, como serrín, cortezas y todo aquello que pueda ir “al contenedor marrón”, se puede prensar un combustible que prenda el fuego a modo de yesca, siendo sustituible el carbón por este producto y, a gran escala, pudiendo ser utilizado para producción de energía de forma renovable. </p>
+                <img src="../src/biomasa_.jpg " alt="biomasa" class="imgs">
+            </details>
       </div>
 
       
+      
+      <div class="class-marca">
+        <h3 id="Datos" >Datos</h3>
+        <span>Nombre: <span id="energía">Nombre</span></span>
+            <br>
+            <span>Porcentaje de energía en México: <span id="porcentaje_mexico" >Porcentaje de energía en México </span>%</span>
+            <br>
+            <span>Porcentaje de energía en el mundo: <span id="porcentaje_mundo">Porcentaje de energía en el mundo</span> %</span>
+          <img class="item" src="../src/Sun energy.png" alt="datos">
+      </div>
+      
+      <footer> 
+       <img id="footer_logo" src="../src/logo_energia.png" alt="logo"> 
+       <hr>
+       Ivanna Santander ©2021
+      </footer>
+
+      
+      
+      <script src="../Js/index.js"></script>
 </body>
 </html>

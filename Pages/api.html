@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Styles/api.css">
+    <title>API</title>
+</head>
+<body>
+    <h1 id="titulo"></h1>
+    <div class="card">
+        <div class="card__content">
+
+            <div class="image__container">
+                <img class="image" id="imagen" src="" alt="">
+            </div>
+
+            <span>Nombre: <span id="nombre" class="name">Nombre</span></span>
+            <br>
+            <span>Tipo: <span id="type" class="type">Tipo </span></span>
+            <br>
+            <span>Peso: <span id="weight">Peso</span> Kg.</span>
+
+        </div>
+    </div>
+    <script>
+    const datos = {
+        //lave      valor
+        "nombre": "Ivanna",
+        "apellido": "Santander",
+        "colores": ['red','blue','green','purple',],
+        "numeros":{
+            "num1": 1,
+            "num2": 2,
+            "num3": {
+                "num4":4
+            }
+        }
+    }
+        console.log(datos.numeros.num3.num4);
+
+        const url = "https://pokeapi.co/api/v2/pokemon/2";
+
+        fetch(url).then( (response)=> {
+            return response.json();
+        }).then( (data)=> {
+            nombre = document.getElementById("nombre");
+            nombre.innerHTML = data.name
+            
+            img = document.getElementById('imagen');
+            img.src = data.sprites.front_default
+
+            type = document.getElementById('type');
+            type.innerHTML = data.types[0].type.name
+
+            peso = document.getElementById('weight');
+            peso.innerHTML = data.weight;
+
+        }).catch(function (error) {
+            alert("Error pokemon no encontrado")
+        });
+
+
+    </script>
+</body>
+</html>
